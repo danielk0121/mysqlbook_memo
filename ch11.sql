@@ -81,7 +81,4 @@ insert into daily_statistic (target_date, stat_name, stat_value)
 values ('2020-09-01', 'visit', 1), ('2020-09-01', 'visit', 2) as new /* new 라는 이름으로 별칭 부여 */
 on duplicate key update daily_statistic.stat_value = daily_statistic.stat_value + new.stat_value ;
 
-# test
-# test 2
-
 
